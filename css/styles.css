@@ -5,8 +5,26 @@ body {
     color: #434455;
     background-color: #FFFFFF;
 }
+p, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
 ul {
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
 a {text-decoration: none;}
 [href] {color: #434455;}
@@ -20,6 +38,33 @@ button:hover, button:focus {
 }
 
 /* HEADER */
+img {
+    display: block;
+    padding-bottom: 32px;
+    
+}
+
+.header {
+    /* padding-top: 24px;
+    padding-bottom: 24px; */
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.header-navigation {
+    display: flex;  
+}
+
+.header-menu-list {
+    display: flex;
+    gap: 40px;
+
+
+}
+
 .header-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -29,6 +74,7 @@ button:hover, button:focus {
     color: #4d5ae5;
     text-transform: uppercase;
     justify-content: flex-start;
+    margin-right: 76px;
 }
 
 .header-logo-studio { 
@@ -49,7 +95,10 @@ button:hover, button:focus {
 .contacts {
     font-style: normal
 }
-
+.contacts-menu-list {
+    display: flex;
+    gap: 40px;
+}
 .contacts-menu-link {
     font-size: 16px;
     line-height: 1.5;
@@ -64,6 +113,9 @@ button:hover, button:focus {
 /* HERO */
 .hero {
     background: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    display: flex;
 }
 
 .hero-title {
@@ -71,8 +123,11 @@ button:hover, button:focus {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #fff;
+    margin-bottom: 48px;
+    max-width: 496px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .hero-button {
@@ -81,13 +136,28 @@ button:hover, button:focus {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
+    width: 169px;
+    height: 56px;
+    justify-content: center;
+    align-items: center;
+    
 }
+
 /* Section 1 */
-.features {}
 
-.features-list {}
+.features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
-.features-item {}
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+
+.features-item {
+    flex-basis: calc((100% - 48px) / 4);
+}
 
 .features-subtitle {
     font-weight: 500;
@@ -95,6 +165,7 @@ button:hover, button:focus {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .features-item-text {
@@ -107,6 +178,9 @@ button:hover, button:focus {
 /* Section 2 */
 .team {
     background: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    
 }
 
 .team-title {
@@ -117,18 +191,32 @@ button:hover, button:focus {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    padding-bottom: 72px;
 }
 
 .team-list {
     background-color: #FFFFFF;
+    display: flex;
+    gap: 24px;
 }
 
 .team-item {
     background-color:#fff;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    flex-basis: calc((100% - 72px) / 4);
+    height: 380px;
+   
+    
 }
 
-.team-image {}
+.team-image {
 
+    height: 260px;
+}
+
+.team-card {
+    padding-bottom: 32px;
+}
 .team-subtitle {
     font-weight: 500;
     font-size: 20px;
@@ -148,7 +236,10 @@ button:hover, button:focus {
 
 /* Section 3 */
 
-.portfolio {}
+.portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .portfolio-title {
     font-weight: 700;
@@ -158,13 +249,21 @@ button:hover, button:focus {
     text-align: center;
     color:#2e2f42;
     text-transform: capitalize;
+    margin-bottom: 8px;
 
 
 }
 
-.portfolio-list {}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
 
-.portfolio-item {}
+.portfolio-item {
+    /* padding-top: 32px;
+    padding-bottom: 32px; */
+}
 
 .portfolio-image {}
 
@@ -185,7 +284,9 @@ button:hover, button:focus {
 
 /* FOOTER */
 .footer {
-    background: #2e2f42;
+    background-color: #2e2f42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-logo-studio {
@@ -200,6 +301,7 @@ button:hover, button:focus {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-bottom: 16px;
 }
 
 .footer-text {
@@ -208,3 +310,4 @@ button:hover, button:focus {
     letter-spacing: 0.02em;
     color: #f4f4fd;
 }
+
