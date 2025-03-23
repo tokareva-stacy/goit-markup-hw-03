@@ -17,9 +17,8 @@ h6 {
 
 .container {
     width: 1158px;
-    padding-left: 15px;
-    padding-left: 15px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 ul {
     list-style-type: none;
@@ -45,8 +44,7 @@ img {
 }
 
 .header {
-    /* padding-top: 24px;
-    padding-bottom: 24px; */
+    border-bottom: 1px solid #e7e9fc
 }
 .header .container {
     display: flex;
@@ -55,13 +53,14 @@ img {
 }
 
 .header-navigation {
-    display: flex;  
+    display: flex;
+    align-items: center;
 }
 
 .header-menu-list {
     display: flex;
     gap: 40px;
-
+    padding: 24px 0
 
 }
 
@@ -111,6 +110,7 @@ img {
 }
 
 /* HERO */
+/* Section 1 */
 .hero {
     background: #2e2f42;
     padding-top: 188px;
@@ -138,12 +138,14 @@ img {
     color: #fff;
     width: 169px;
     height: 56px;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    min-width: 169px;
+    border: none;
+    border-radius: 4px;
     
 }
 
-/* Section 1 */
+/* Section 2 */
 
 .features {
     padding-top: 120px;
@@ -175,7 +177,10 @@ img {
     color: #434455;
 }
 
-/* Section 2 */
+/* Section 3 */
+.visually-hidden {
+
+}
 .team {
     background: #f4f4fd;
     padding-top: 120px;
@@ -216,6 +221,8 @@ img {
 
 .team-card {
     padding-bottom: 32px;
+    padding: 32px 0;
+    
 }
 .team-subtitle {
     font-weight: 500;
@@ -224,6 +231,7 @@ img {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .team-item-text {
@@ -234,7 +242,7 @@ img {
     color: #434455;
 }
 
-/* Section 3 */
+/* Section 4 */
 
 .portfolio {
     padding-top: 120px;
@@ -249,8 +257,7 @@ img {
     text-align: center;
     color:#2e2f42;
     text-transform: capitalize;
-    margin-bottom: 8px;
-
+    margin-bottom: 72px;
 
 }
 
@@ -258,14 +265,21 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
+    width: calc((100% - 48px) / 3);
 }
 
 .portfolio-item {
-    /* padding-top: 32px;
-    padding-bottom: 32px; */
+    border-radius: 0px 0px 4px 4px;
 }
 
 .portfolio-image {}
+
+.portfolio-card {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+}
 
 .portfolio-subtitle {
     font-weight: 500;
@@ -302,6 +316,7 @@ img {
     text-transform: uppercase;
     color: #4d5ae5;
     margin-bottom: 16px;
+    display: inline-block;
 }
 
 .footer-text {
