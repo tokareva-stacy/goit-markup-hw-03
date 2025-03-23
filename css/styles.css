@@ -60,7 +60,7 @@ img {
 .header-menu-list {
     display: flex;
     gap: 40px;
-    padding: 24px 0
+    
 
 }
 .header-menu-item {
@@ -88,6 +88,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
 }
 
 .header-menu-link:hover, .header-menu-link:focus {
@@ -95,21 +96,24 @@ img {
 }
 
 .contacts {
-    font-style: normal
+    font-style: normal;
 }
 .contacts-menu-list {
     display: flex;
     gap: 40px;
 }
+
 .contacts-menu-link {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    
 }
 
 .contacts-menu-link:hover, .contacts-menu-link:focus {
     color: #404BBF;
+    
 }
 
 /* HERO */
@@ -150,7 +154,15 @@ img {
 }
 
 /* Section 2 */
-
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;}
 .features {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -182,9 +194,7 @@ img {
 }
 
 /* Section 3 */
-.visually-hidden {
 
-}
 .team {
     background: #f4f4fd;
     padding-top: 120px;
